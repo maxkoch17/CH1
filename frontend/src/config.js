@@ -1,5 +1,6 @@
 const config = {
   // Backend config
+  MAX_ATTACHMENT_SIZE: 5000000,
   s3: {
     REGION: process.env.REACT_APP_REGION,
     BUCKET: process.env.REACT_APP_BUCKET,
@@ -15,5 +16,7 @@ const config = {
     IDENTITY_POOL_ID: process.env.REACT_APP_IDENTITY_POOL_ID,
   },
 };
+
+
 
 export default config;

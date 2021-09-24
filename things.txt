@@ -2,3 +2,15 @@ IdentityPoolId: us-east-1:0b476057-a50e-4733-884c-a2bb612df2ab
     Region: us-east-1
     UserPoolClientId: 303avg2fpi1v4t30du7rm50uc3
     UserPoolId: us-east-1_UFSnqFv0Z
+    
+    
+      aws cognito-idp sign-up \
+    --region us-east-1 \
+    --client-id 303avg2fpi1v4t30du7rm50uc3 \
+    --username max@collectahood.com \
+    --password AlmondButter17!
+    
+      aws cognito-idp admin-confirm-sign-up \
+    --region us-east-1 \
+    --user-pool-id us-east-1_UFSnqFv0Z \
+    --username max@collectahood.com
